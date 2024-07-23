@@ -23,17 +23,17 @@ class Map_loader:
 
         self.clock = pygame.time.Clock()
         # 加载图片-----------------------------------------------------------------------------
-        self.background_image = pygame.image.load(r"image\background.png")
-        self.background_image_tishi = pygame.image.load(r"image\background_maploader_tishi.png")
-        self.select_image = pygame.image.load(r"image\select.png")
+        self.background_image = pygame.image.load(r"image/background.png")
+        self.background_image_tishi = pygame.image.load(r"image/background_maploader_tishi.png")
+        self.select_image = pygame.image.load(r"image/select.png")
 
         # 敌方出现的图片
-        appearance_image = pygame.image.load(r"image\special_effects\appear.png").convert_alpha()
+        appearance_image = pygame.image.load(r"image/special_effects/appear.png").convert_alpha()
         self.appearance = appearance_image.subsurface((96, 0), (48, 48))
 
         # 玩家一和玩家二的图片
-        tank_L1_image = pygame.image.load(r"image\tank_T1_0.png").convert_alpha()
-        tank_L2_image = pygame.image.load(r"image\tank_T2_0.png").convert_alpha()
+        tank_L1_image = pygame.image.load(r"image/tank_T1_0.png").convert_alpha()
+        tank_L2_image = pygame.image.load(r"image/tank_T2_0.png").convert_alpha()
 
         self.tank_l1 = tank_L1_image.subsurface((0, 0), (48, 48))
         self.tank_l2 = tank_L2_image.subsurface((0, 0), (48, 48))
